@@ -5,146 +5,229 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img height="60px"  src="shoes.webp" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img height="60px" src="shoes.webp" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery"> GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts"> CONTACTS</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<h1 class="text-center">KICKS</h1>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="650vh" width="50vh" src="ufs.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img height="550vh" src="img2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img height="550vh" src="img3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">ABOUT US</a>
-                </li>
-              
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery"> GALLERY</a>
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contacts"> CONTACTS</a>
-            </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</nav>
 
+    <main>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img height="550vh" src="img 1.webp" class="d-block w-100" alt="...">
+        <div id="about" class="container p-5 my-5 text-center display-1">
+            <h1>ABOUT US </h1>
         </div>
-        <div class="carousel-item">
-            <img height="550vh" src="img2.jpeg" class="d-block w-100" alt="...">
+        <div>
+            <img width="100%" height="400px" src="about us image.jpg">
         </div>
-        <div class="carousel-item">
-            <img height="550vh" src="img3.jpg" class="d-block w-100" alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+        <div class="container p-5 my-5 text-center">
 
-<main>
+            <div class="row">
 
-    <div id="about" class="container p-5 my-5 text-center display-1">
-     <h1>ABOUT US </h1>   
-    </div> 
-    <div>
-        <img width="100%"height="400px" src="about us image.jpg"> 
-    </div>
-    <div class="container p-5 my-5 text-center">
-
-        <div class="row">
-
-            <div class="col-sm-6">
-                <div>
-                    <img class="rounded-circle" src="sheu.jpeg" alt="">
+                <div class="col-sm-6">
+                    <div>
+                        <img class="rounded-circle" src="sheu.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>OUR STORE</h3>
+                    <h5>Our store offers a wide range of stylish and comfortable shoes. Our mission is to provide our
+                        customers with the perfect footwear
+                        fit for every occasion. Shop with us today for a seamless shopping experience!</h5>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>OUR STORE</h3>
-                <h5>Our store offers a wide range of stylish and comfortable shoes. Our mission is to provide our customers with the perfect footwear
-                fit for every occasion. Shop with us today for a seamless shopping experience!</h5>
+
+        </div>
+        <div id="gallery" class="container p-5 my-5 text-center display-1">
+            <h1>OUR GALLERY </h1>
+        </div>
+        <div class="container p-5 my-5">
+            <div class="d-flex justify-content-evenly">
+
+                <div class="card" style="width: 18rem;">
+                    <img height="270px" src="download.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AIR MAX 90s</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img height="270px" src="kjm.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title">GALAXY AIR MAX</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img height="270px" src="mjk.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">NIKE AIR MAX 1s</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-        
-    </div>
-    <div id="gallery" class="container p-5 my-5 text-center display-1">
-        <h1>OUR GALLERY </h1>
-    </div>
-    <div class="container p-5 my-5">
-<div class="d-flex justify-content-evenly">
+    </main>
+    <footer>
+        <div>
+            <img width="100%" height="300px" src="diwe.jpeg" alt="">
+        </div>
+        <div id="contacts" class="container p-5 my-5 text-center display-1">
+            <h1>OUR CONTACTS </h1>
+        </div>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32390057787!2d36.68257963760277!3d-1.303203559937187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2snl!4v1728844786616!5m2!1sen!2snl"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<div class="card" style="width: 18rem;">
-    <img height="270px" src="download.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">AIR MAX 90s</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
+<footer class="bg-dark text-light pt-5">
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <h3 class="fw-bold">KICKS</h3>
+                <p class="pt-2">321, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="mb-2">0987654321</p>
+                <p>1234567890</p>
+            </div>
+            <div class="col">
+                <h4>Menu</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Home</li>
+                    <li class="py-1">Shorts</li>
+                    <li class="py-1">About</li>
+                    <li class="py-1">Contact</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>More</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Landing Pages</li>
+                    <li class="py-1">FAQs</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Categories</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Nike</li>
+                    <li class="py-1">Addidas</li>
+                    <li class="py-1">Batta</li>
+                    <li class="py-1">Kicks</li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3 text-lg-end">
+                <h4>Social Media Links</h4>
+                <div class="social-media pt-2">
+                    <a href="#" class="text-light fs-2 me-3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-light fs-2 me-3"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" class="text-light fs-2 me-3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-light fs-2"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-sm-flex justify-content-between py-1">
+            <p>2023 © Coding Yaar. All Rights Reserved. </p>
+            <p>
+                <a href="#" class="text-light text-decoration-none pe-4">Terms of use</a>
+                <a href="#" class="text-light text-decoration-none"> Privacy policy</a>
+            </p>
+        </div>
     </div>
-</div>
-<div class="card" style="width: 18rem;">
-    <img height="270px"  src="kjm.jpeg" class="card-img-top" alt="...">
-    
-    <div class="card-body">
-        <h5 class="card-title">GALAXY AIR MAX</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
-    </div>
-</div>
-<div class="card" style="width: 18rem;">
-    <img height="270px"  src="mjk.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">NIKE AIR MAX 1s</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
-    </div>
-</div>
+</footer>
 
 
-</div>
-    </div>
-</main>
+
+
+
+
+
+
+
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
